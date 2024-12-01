@@ -1,4 +1,4 @@
-package test;
+package gestaoTarefas;
 
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.BeforeEach;
@@ -16,18 +16,19 @@ public class ConfiguracaoTest {
     @Test
     public void testAtualizarLimiteDeTempo() {
         configuracao.atualizarLimiteDeTempo(30);
+        assertEquals(30, configuracao.getLimiteTempo());
     }
 
     @Test
     public void testAtivarNotificacoes() {
         configuracao.ativarNotificacoes();
-        assertTrue(configuracao.notificacoesAtivas);
+        assertTrue(configuracao.getNotificacoesAtivas());
     }
 
     @Test
     public void testDesativarNotificacoes() {
         configuracao.desativarNotificacoes();
-        assertFalse(configuracao.notificacoesAtivas);
+        assertFalse(configuracao.getNotificacoesAtivas());
     }
 }
 

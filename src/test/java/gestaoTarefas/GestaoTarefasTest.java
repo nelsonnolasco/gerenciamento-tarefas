@@ -1,4 +1,4 @@
-package test;
+package gestaoTarefas;
 
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.BeforeEach;
@@ -8,13 +8,11 @@ public class GestaoTarefasTest {
 
     private GestaoTarefas gestaoTarefas;
     private Projeto projeto;
-    private Tarefa tarefa;
 
     @BeforeEach
     public void setUp() {
         gestaoTarefas = new GestaoTarefas();
         projeto = new Projeto("gestaoTarefas.Projeto de TI");
-        tarefa = new Tarefa("Desenvolver API", "2024-12-31", "Alta");
     }
 
     @Test

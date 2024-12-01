@@ -33,5 +33,13 @@ public class Projeto {
     public List<Tarefa> getTarefas() {
         return tarefas;
     }
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
 }
 

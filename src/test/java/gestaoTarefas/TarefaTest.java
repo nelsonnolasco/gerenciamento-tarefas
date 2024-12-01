@@ -1,4 +1,4 @@
-package test;
+package gestaoTarefas;
 
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.BeforeEach;
@@ -32,5 +32,20 @@ public class TarefaTest {
     public void testAtribuirResponsavel() {
         tarefa.atribuirResponsavel("João");
         assertEquals("João", tarefa.getResponsavel());
+    }
+
+    @Test
+    public void testSetters(){
+        tarefa.setDescricao("Desenvolver API REST");
+        tarefa.setPrazo("2024-12-30");
+        tarefa.setPrioridade("Média");
+        tarefa.setStatus("Concluída");
+        tarefa.setResponsavel("Maria");
+
+        assertEquals("Desenvolver API REST", tarefa.getDescricao());
+        assertEquals("2024-12-30", tarefa.getPrazo());
+        assertEquals("Média", tarefa.getPrioridade());
+        assertEquals("Concluída", tarefa.getStatus());
+        assertEquals("Maria", tarefa.getResponsavel());
     }
 }

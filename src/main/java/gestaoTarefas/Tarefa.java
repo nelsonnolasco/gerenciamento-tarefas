@@ -33,5 +33,33 @@ public class Tarefa {
     public String getResponsavel() {
         return responsavel;
     }
+
+    public String getPrazo() {
+        return prazo;
+    }
+
+    public void setPrazo(String prazo) {
+        this.prazo = prazo;
+    }
+
+    public String getPrioridade() {
+        return prioridade;
+    }
+
+    public void setPrioridade(String prioridade) {
+        this.prioridade = prioridade;
+    }
+
+    public void setDescricao(String descricao) {
+        this.descricao = descricao;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
+
+    public void setResponsavel(String responsavel) {
+        this.responsavel = responsavel;
+    }
 }
 

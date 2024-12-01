@@ -15,5 +15,14 @@ public class Configuracao {
     public void desativarNotificacoes() {
         this.notificacoesAtivas = false;
     }
-}
 
+    // Getter for limiteTempo
+    public int getLimiteTempo() {
+        return limiteTempo;
+    }
+
+    // Getter for notificacoesAtivas
+    public boolean getNotificacoesAtivas() {
+        return notificacoesAtivas;
+    }
+}
