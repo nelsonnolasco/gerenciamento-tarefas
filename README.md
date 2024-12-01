@@ -2,5 +2,5 @@ Este projeto será desafiador - sistema de gerenciamento de tarefas de projetos 
 
 - Participantes:
     - Nelson de Campos Nolasco
-    - Rúbia Martins
-    - Samuel Freitas
+    - Rubia Coelho de Matos
+    - Samuel Ribeiro de Freitas
